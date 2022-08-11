@@ -11,7 +11,7 @@
 |이름|역할|github|
 |---|---|---|
 |이가람|검색, 추천, 검색 리스트|https://github.com/devmagrfs|
-|박소영|영화 리스트, 무한 스크롤|https://github.com/soyoung931014|
+|박소영|영화 리스트, 무한 스크롤, |https://github.com/soyoung931014|
 |이미림|피그마, 영화 상세페이지, 즐겨찾기(기능)|https://github.com/mrlee323|
 |서소희|전체 레이아웃, 라우팅 CSS, 리팩토링|https://github.com/greenish0902|
 |성열하|검색, 추천, 검색 리스트|https://github.com/Hotsumm|
