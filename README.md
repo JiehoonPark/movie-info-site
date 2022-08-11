@@ -17,7 +17,17 @@
 |성열하|검색, 추천, 검색 리스트|https://github.com/Hotsumm|
 |박지훈|data fetching module|https://github.com/JiehoonPark|
 
-## 3. 프로젝트 구조
+## 3. 사용 방법
+```jsx
+# with yarn
+# install
+$ yarn install
+
+# run
+$ yarn start
+```
+
+## 4. 프로젝트 구조
 
 ```jsx
 
@@ -79,7 +89,7 @@ root
 └── index.tsx
 ```
 
-## 4. 구현 기능
+## 5. 구현 기능
 
 ### 영화 검색
 
@@ -115,7 +125,7 @@ root
  
  
  
- ## 5. [피그마 🎨](https://www.figma.com/file/Mu4NicacSniXYsGvf8tfZh/Wanted?node-id=0%3A1) 
+ ## 6. [피그마 🎨](https://www.figma.com/file/Mu4NicacSniXYsGvf8tfZh/Wanted?node-id=0%3A1) 
  
  ### 웹
  
