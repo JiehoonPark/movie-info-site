@@ -15,7 +15,6 @@ const Search = () => {
   const [ratingTab, setRatingTab] = useState<boolean>(false);
   const [latestTab, setLatestTab] = useState<boolean>(false);
 
-  // console.log(page,'page')
   useEffect(() => {
     if (ratingTab === true) {
       goToRatingTab();

@@ -21,7 +21,6 @@ const SearchList = ({
   const handleClickedElement = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.currentTarget.textContent) {
       handleInnterText(event.currentTarget.textContent);
-      console.log(event.currentTarget.textContent);
     }
   };
 
