@@ -23,7 +23,6 @@ const SearchInput: React.FC<SearchInputProps> = ({ handleSearchMovie }) => {
   const [isInputFocus, setIsInputFocus] = useState<boolean>(false);
 
   const handleInnterText = (innerText: string) => {
-    console.log(innerText);
     setSearchInput(innerText.trim());
     handleSearch();
   };

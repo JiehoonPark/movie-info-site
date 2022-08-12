@@ -67,11 +67,14 @@ PostCard.displayName = 'PostCard';
 export default PostCard;
 
 const PostCardContainer = styled.li`
-  width: 100%;
   cursor: pointer;
   position: relative;
   transition: all 300ms ease;
   user-select: none;
+  @media ${({ theme }) => theme.deviceSize.max.mobile} {
+    width: 120px;
+    height: 180px;
+  }
   &:hover {
     z-index: 9999;
     transform: scale(1.3);
@@ -85,7 +88,7 @@ const PostCardContainer = styled.li`
     }
   }
   .imgBox {
-    width: 200px;
+    width: 100%;
     height: 300px;
     img {
       width: 100%;
@@ -94,6 +97,8 @@ const PostCardContainer = styled.li`
     }
   }
   .text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
@@ -109,9 +114,7 @@ const PostCardContainer = styled.li`
     opacity: 0;
     overflow: hidden;
     .icons {
-      position: fixed;
-      top: 4px;
-      right: 4px;
+      align-self: flex-end;
       * {
         margin: 0 2px;
         transition: all 300ms ease;
@@ -164,7 +167,6 @@ const PostCardContainer = styled.li`
       height: 180px;
     }
     .text {
-      border: 12px solid transparent;
       .title {
         font-size: 12px;
       }

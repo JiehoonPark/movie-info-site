@@ -66,21 +66,25 @@ const PostList: React.FC<PostListProps> = ({ movieList, page, setPage }) => {
 export default PostList;
 
 const PostListContainer = styled.div`
-  width: 90vw;
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  width: 1230px;
+  margin: 50px auto 0px auto;
+  @media ${({ theme }) => theme.deviceSize.max.mobile} {
+    width: 369px;
+    gap: 12px 12px;
+    margin: 31px auto 0px auto;
+  }
 `;
 
 const Grid = styled.ul`
-  @media ${({ theme }) => theme.deviceSize.max.mobile} {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(230px, auto));
   gap: 20px 10px;
+  width: 100%;
+  @media ${({ theme }) => theme.deviceSize.max.mobile} {
+    grid-template-columns: repeat(auto-fit, 115px);
+    gap: 12px 12px;
+  }
 `;
 
 const NoMovieList = styled.div``;
