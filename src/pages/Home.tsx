@@ -1,29 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { getMovieByRating, getMovieByGenre } from 'src/api/movieApi';
+import { getMovieByRating, getMovieByGenre, getMovies } from 'src/api/movieApi';
 import { BsArrowUpSquareFill } from 'react-icons/bs';
 
 import PostRow from '../components/post/PostRow';
 import ScrollTop from 'src/components/elements/ScrollTop';
+import { GENRES } from 'src/constants/movies';
 
 const Home = () => {
-  const genres = [
-    'Adventure',
-    'Reality-TV',
-    'Talk-Show',
-    'Action',
-    'Documentary',
-    'Music',
-    'Horror',
-    'Comedy',
-    'Biography',
-    'Drama',
-    'Crime',
-    'Romance',
-    'Fantasy',
-    'Thriller',
-    'News',
-  ].sort();
   const scrollTop = () => {
     window.scroll({
       top: 0,
@@ -34,7 +18,7 @@ const Home = () => {
 
   return (
     <HomeContainer>
-      {genres.map((genre, index) => (
+      {GENRES.map((genre, index) => (
         <div className="row" key={index}>
           <h1>{genre}</h1>
           <PostRow movies={getMovieByGenre(genre).data} />
